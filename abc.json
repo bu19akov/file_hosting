@@ -4,7 +4,7 @@
       "kty": "RSA",
       "use": "sig",
       "kid": "pentesterlab",
-      "n": "qeY5L0xVUcgWcGPHywnvsidVxOa5RRjZbYq1zrMYPIBXyo74-c1rf2p-qGJESQrGoTnFuUYTn5UIotuXW18Ehw",
+      "n": "onky43f8T1AFxFoggHphtYjLuiTWS281VrhiMlkHyd75ATfdukM6IJnu3RUW5KhX_nQkYzNLZZnwh7zCjDmApw",
       "e": "AQAB",
       "alg": "RS256"
     }
