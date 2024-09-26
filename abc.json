@@ -1,0 +1,12 @@
+{
+  "keys": [
+    {
+      "kty": "RSA",
+      "use": "sig",
+      "kid": "pentesterlab",
+      "n": "prANLytaDNh2bpuwm2KDWcDie3IsCYIogJoM5heQv5yEv8T3vxHxI4PeiXfu1RuzBpZ24q2utdt4y6cq-hcr6w",
+      "e": "AQAB",
+      "alg": "RS256"
+    }
+  ]
+}
