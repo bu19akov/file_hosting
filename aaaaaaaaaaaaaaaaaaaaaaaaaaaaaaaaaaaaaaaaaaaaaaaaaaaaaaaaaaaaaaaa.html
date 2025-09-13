@@ -2,25 +2,67 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Bitcoin Transaction</title>
+  <title>Transaction aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa - Bitcoin</title>
+  <meta name="robots" content="noindex">
+
+  <!-- JSON for parsers that prefer structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FinancialTransaction",
+    "transactionType": "blockchain",
+    "blockchain": "bitcoin",
+    "identifier": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "status": "confirmed",
+    "confirmations": 6,
+    "amount": {
+      "@type": "MonetaryAmount",
+      "currency": "BTC",
+      "value": "100.00000000"
+    },
+    "recipient": "bc1qrjt8umwlgn4zpjjfqm6duk2wqartzpf8a4pme8",
+    "outputs": [{
+      "address": "bc1qrjt8umwlgn4zpjjfqm6duk2wqartzpf8a4pme8",
+      "value_sats": 10000000000
+    }]
+  }
+  </script>
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+    .tx { padding: 16px; border: 1px solid #ddd; border-radius: 8px; }
+    .kv { display: flex; gap: 8px; }
+    .outputs { margin-top: 12px; }
+    .output { padding: 8px; border: 1px solid #eee; border-radius: 6px; }
+  </style>
 </head>
 <body>
-  <h1>TXID: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</h1>
+  <h1>Transaction aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</h1>
 
-  <!-- Status -->
-  <div>Status: Confirmed</div>
-  <div>Статус: подтверждена</div>
-  <div>Confirmations: 6</div>
-  <div>Подтверждений: 6</div>
+  <!-- Common status phrases (EN/RU) -->
+  <div class="tx">
+    <div class="kv"><strong>Status:</strong><span>Confirmed</span></div>
+    <div class="kv"><strong>Статус:</strong><span>подтверждена</span></div>
+    <div class="kv"><strong>Confirmations:</strong><span>6</span></div>
+    <div class="kv"><strong>Подтверждений:</strong><span>6</span></div>
 
-  <!-- Recipient -->
-  <div>To: bc1qrjt8umwlgn4zpjjfqm6duk2wqartzpf8a4pme8</div>
-  <div>Recipient address: bc1qrjt8umwlgn4zpjjfqm6duk2wqartzpf8a4pme8</div>
-  <div>Получатель: bc1qrjt8umwlgn4zpjjfqm6duk2wqartzpf8a4pme8</div>
+    <!-- Totals phrased in multiple ways -->
+    <div class="kv"><strong>Total output:</strong><span>100.00000000 BTC</span></div>
+    <div class="kv"><strong>Amount:</strong><span>100 BTC</span></div>
+    <div class="kv"><strong>Value:</strong><span>10,000,000,000 sats</span></div>
 
-  <!-- Amount -->
-  <div>Amount: 100 BTC</div>
-  <div>Total output: 100.00000000 BTC</div>
-  <div>Сумма: 100 BTC</div>
+    <!-- Output block; keep address and amount close together -->
+    <div class="outputs">
+      <h2>Outputs</h2>
+      <div class="output" id="vout-0">
+        <div><strong>To:</strong> <a href="/address/bc1qrjt8umwlgn4zpjjfqm6duk2wqartzpf8a4pme8" class="address">bc1qrjt8umwlgn4zpjjfqm6duk2wqartzpf8a4pme8</a></div>
+        <div><strong>Amount:</strong> <span class="amount">100 BTC</span></div>
+        <div><strong>Value:</strong> <span class="value">100.00000000 BTC</span></div>
+      </div>
+    </div>
+
+    <!-- Extra synonyms some scrapers look for -->
+    <div>Received: 100 BTC to bc1qrjt8umwlgn4zpjjfqm6duk2wqartzpf8a4pme8</div>
+    <div>Оплачено: 100 BTC на адрес bc1qrjt8umwlgn4zpjjfqm6duk2wqartzpf8a4pme8</div>
+  </div>
 </body>
 </html>
